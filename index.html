@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09081d">
+<meta name="description" content="KNOuX GrabFlow v0.6.7 — direct media discovery, browser downloads, optional native HLS/DASH assembly and VS Code companion. Verified download packages.">
+<title>KNOuX GrabFlow — Official Downloads v0.6.7</title>
+<style>
+:root{--bg:#08091a;--panel:#14122b;--text:#f7f5ff;--muted:#c5bdda;--violet:#9333ea;--cyan:#00dfff;--border:#48436e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at 8% 3%,#36205f 0,transparent 29%),radial-gradient(circle at 90% 14%,#083a60 0,transparent 38%),var(--bg)}
+a{color:#6feeff}a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:4px}
+.wrapper{max-width:1170px;margin:auto;padding:0 25px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:23px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:white;font-weight:800;letter-spacing:.01em;font-size:1.12rem}
+.brand img{width:48px;height:48px;border-radius:50%}
+.links{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.links a{text-decoration:none;color:#e8defa;font-size:.9rem}
+#lang{border:1px solid #8376bc;border-radius:100px;color:#fff;background:#242044;padding:9px 17px;cursor:pointer;font-size:.94rem}
+.hero{padding:45px 0 34px;display:grid;grid-template-columns:1.08fr .92fr;gap:32px;align-items:center}
+.eyebrow{color:#7df2ff;text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:.78rem}
+h1{font-size:clamp(2.65rem,5vw,4.8rem);line-height:1.08;margin:12px 0 16px;letter-spacing:-.045em}
+h1 span,.gradient{background:linear-gradient(110deg,#d2a5ff,#fff 46%,#19dfff);background-clip:text;color:transparent}
+.lead{max-width:640px;color:var(--muted);font-size:1.13rem}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}
+.pills span{border:1px solid #504579;padding:7px 13px;border-radius:100px;background:#211637;color:#efdefd;font-size:.82rem}
+.hero-image{position:relative}
+.hero-image img{width:100%;height:auto;border:1px solid #7b4bbe;border-radius:16px;box-shadow:0 0 35px #6326a244;display:block}
+h2{font-size:clamp(1.65rem,2.8vw,2.4rem);margin:30px 0 10px}
+.sub{color:var(--muted);max-width:760px;margin:0 0 24px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.card{padding:23px;border:1px solid var(--border);border-radius:19px;background:linear-gradient(130deg,#1c1836e8,#11162bdd);box-shadow:inset 0 1px 0 #ffffff0b}
+.card h3{margin:0 0 12px;font-size:1.24rem}.card p{color:var(--muted);min-height:68px;font-size:.93rem}
+.icon{font-size:1.7rem;margin-bottom:12px}
+.cta{display:inline-flex;justify-content:center;align-items:center;min-height:44px;border-radius:12px;padding:12px 17px;background:linear-gradient(105deg,#8c33ee,#007bb8);text-decoration:none;font-weight:750;color:white;box-shadow:0 4px 24px #6125a842}
+.cta:hover{filter:brightness(1.16)}.cta.secondary{background:#181d37;border:1px solid #4e7aab;box-shadow:none}
+.small{font-size:.81rem;color:#c3b8da;line-height:1.5}
+.instruction{padding:15px 18px;border:1px solid #5c5a80;border-radius:13px;background:#171b36;color:#f2eefe;margin-top:24px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:25px}
+.features div{border:1px solid #403961;border-radius:13px;padding:15px;background:#151128;color:#dacfed}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery figure{margin:0}.gallery img{width:100%;height:auto;border-radius:12px;border:1px solid #403b65}
+.gallery figcaption{color:var(--muted);font-size:.88rem;margin-top:7px}
+section{margin:20px 0 55px}
+code{background:#0c1530;padding:2px 5px;border-radius:5px}
+footer{border-top:1px solid #423b60;padding:25px 0 42px;color:var(--muted);font-size:.88rem}
+.footer-links{display:flex;gap:22px;flex-wrap:wrap}
+.warning{border-inline-start:4px solid var(--cyan);background:#131e34;padding:16px 20px;border-radius:8px;color:#e4e0f3}
+[hidden]{display:none!important}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.wrapper{padding:0 16px}.cards,.gallery{grid-template-columns:1fr}.hero{padding:22px 0}.links a{display:none}.card p{min-height:0}}
+html[dir="rtl"] .hero{text-align:right}html[dir="rtl"] .brand,html[dir="rtl"] .card{text-align:right}
+</style>
+</head>
+<body><div class="wrapper">
+<header>
+<a class="brand" href="#top"><img src="./assets/GrabFlow-v0.6.7-Logo-300x300.png" alt="KNOuX GrabFlow logo"> KNOuX GrabFlow</a>
+<nav class="links" aria-label="Main navigation"><a href="#downloads">Downloads</a><a href="#features">Features</a><a href="#screens">Screenshots</a><a href="#privacy">Privacy</a><button id="lang" type="button" aria-label="Switch to Arabic">العربية</button></nav>
+</header>
+<main id="top">
+<div class="hero">
+<div>
+<div class="eyebrow">Official distribution • v0.6.7</div>
+<h1><span>KNOuX</span><br>GrabFlow</h1>
+<p class="lead" data-en="Discover eligible media on the page you choose. Download direct files in your browser, or assemble supported unprotected streams with an optional local Native Companion." data-ar="اكتشف ملفات الوسائط المسموح بها من الصفحة التي تختارها. نزّل الملفات المباشرة، أو جمّع البث المدعوم غير المحمي بمساعد محلي اختياري.">Discover eligible media on the page you choose. Download direct files in your browser, or assemble supported unprotected streams with an optional local Native Companion.</p>
+<div class="pills"><span>Microsoft Edge</span><span>Google Chrome</span><span>VS Code</span><span>Native Companion</span></div>
+<p><a class="cta" href="#downloads" data-en="View verified downloads" data-ar="عرض ملفات التنزيل المتحقَّق منها">View verified downloads</a></p>
+</div>
+<div class="hero-image"><img src="./assets/GrabFlow-v0.6.7-Marquee-1400x560.png" alt="KNOuX GrabFlow v0.6.7 promotional banner showing media discovery interface"></div>
+</div>
+<section id="downloads">
+<div class="eyebrow">Distribution packages</div>
+<h2 data-en="Choose your platform" data-ar="اختار منصتك">Choose your platform</h2>
+<p class="sub" data-en="These are independently verified release archives. Store approval is separate and is not claimed here." data-ar="دي حزم إصدار تم التحقق من سلامتها. موافقة متاجر الإضافات مرحلة منفصلة ولم يتم الادعاء بحصولها.">These are independently verified release archives. Store approval is separate and is not claimed here.</p>
+<div class="cards">
+<article class="card"><div class="icon">🌐</div><h3>Google Chrome</h3><p data-en="Manifest V3 browser extension for desktop Chromium. Direct downloads; native stream assembly requires separate setup." data-ar="إضافة Manifest V3 لمتصفح Chrome على الكمبيوتر. التجميع يحتاج تثبيت المساعد المحلي منفصلًا.">Manifest V3 browser extension for desktop Chromium. Direct downloads; native stream assembly requires separate setup.</p><a class="cta" href="https://github.com/daynightae-cmyk/KNOuX-GrabFlow-Downloads/releases/download/v0.6.7/KNOuX-GrabFlow-CHROME-v0.6.7.zip">Download Chrome ZIP</a><p class="small">v0.6.7 · 167,640 bytes · SHA-256 checksums in release</p></article>
+<article class="card"><div class="icon">🔵</div><h3>Microsoft Edge</h3><p data-en="Tested desktop Edge extension with real download lifecycle, persistent jobs and Arabic RTL." data-ar="إضافة Edge للكمبيوتر، باختبارات تنزيل فعلية ومتابعة الوظائف ودعم العربية.">Tested desktop Edge extension with real download lifecycle, persistent jobs and Arabic RTL.</p><a class="cta" href="https://github.com/daynightae-cmyk/KNOuX-GrabFlow-Downloads/releases/download/v0.6.7/KNOuX-GrabFlow-EDGE-v0.6.7.zip">Download Edge ZIP</a><p class="small">v0.6.7 · 167,640 bytes · SHA-256 checksums in release</p></article>
+<article class="card"><div class="icon">💻</div><h3>Visual Studio Code</h3><p data-en="Installable VSIX companion, with bundled native helper scripts. Python/FFmpeg must be installed separately for stream tools." data-ar="إضافة VS Code بصيغة VSIX ومعها سكربتات المساعد. أدوات البث تحتاج Python وFFmpeg منفصلين.">Installable VSIX companion, with bundled native helper scripts. Python/FFmpeg must be installed separately for stream tools.</p><a class="cta" href="https://github.com/daynightae-cmyk/KNOuX-GrabFlow-Downloads/releases/download/v0.6.7/KNOuX-GrabFlow-VSCODE-v0.6.7.vsix">Download VSIX</a><p class="small">v0.6.7 · 58,602 bytes · Tested VS Code extension-host activation</p></article>
+</div>
+<div class="instruction" data-en="Important: Chrome and Edge ZIPs are for manual/developer installation (unzip and choose Load unpacked). They are not signed store installers. Native streaming functions require the separately installed companion, FFmpeg and FFprobe. The VSIX installs from VS Code → Extensions → Install from VSIX." data-ar="مهم: ملفات Chrome وEdge ZIP للتثبيت اليدوي (فك الضغط ثم Load unpacked)، وليست مثبتات موقّعة من المتجر. خدمات HLS/DASH تحتاج المساعد المحلي وFFmpeg وFFprobe. ملف VSIX يُثبَّت من VS Code ← Extensions ← Install from VSIX.">Important: Chrome and Edge ZIPs are for manual/developer installation (unzip and choose Load unpacked). They are not signed store installers. Native streaming functions require the separately installed companion, FFmpeg and FFprobe. The VSIX installs from VS Code → Extensions → Install from VSIX.</div>
+<p><a class="cta secondary" href="https://github.com/daynightae-cmyk/KNOuX-GrabFlow-Downloads/releases/download/v0.6.7/KNOuX-GrabFlow-NATIVE-COMPANION-v0.6.7.zip">Native Companion source &amp; setup</a> <a class="cta secondary" href="https://github.com/daynightae-cmyk/KNOuX-GrabFlow-Downloads/releases/download/v0.6.7/SHA256SUMS.txt">SHA-256 checksum manifest</a></p>
+</section>
+<section id="features"><div class="eyebrow">Real functionality</div><h2 data-en="Capture, inspect, download" data-ar="اكتشف وافحص ونزّل">Capture, inspect, download</h2><div class="features"><div>🎬 Video, audio, image and document references</div><div>🔎 Search, filter, preview, export</div><div>⬇️ Browser-native downloads and history</div><div>🔐 URL audits and consent-driven native tools</div></div></section>
+<section id="screens"><div class="eyebrow">Actual browser evidence</div><h2 data-en="Inside GrabFlow" data-ar="واجهة GrabFlow الحقيقية">Inside GrabFlow</h2><p class="sub" data-en="Screenshots are derived from tested extension runtime captures, not invented features." data-ar="الصور مبنية على لقطات تشغيل فعلية للإضافة، من غير خدمات متخيلة.">Screenshots are derived from tested extension runtime captures, not invented features.</p><div class="gallery">
+<figure><img loading="lazy" src="./assets/GrabFlow-v0.6.7-English-1280x800.png" alt="English popup runtime screenshot"><figcaption>English · Desktop</figcaption></figure>
+<figure><img loading="lazy" src="./assets/GrabFlow-v0.6.7-Direct-Video-1280x800.png" alt="Direct video download runtime screenshot"><figcaption>Direct downloads</figcaption></figure>
+<figure><img loading="lazy" src="./assets/GrabFlow-v0.6.7-Arabic-RTL-1280x800.png" alt="Arabic right-to-left runtime screenshot"><figcaption>العربية · RTL</figcaption></figure>
+</div></section>
+<section id="privacy"><div class="eyebrow">Privacy and release truth</div><h2 data-en="Local-first, user-controlled" data-ar="خصوصية وتحكم المستخدم">Local-first, user-controlled</h2><div class="warning" data-en="GrabFlow does not bypass DRM or restricted content. Use it only for media you are authorized to access. Microsoft/Google store certification and Marketplace publication are not claimed here. Native assembly is available only where the separate compatible companion is installed." data-ar="الإضافة لا تتجاوز DRM أو المحتوى المقيّد. استخدمها فقط مع الوسائط المصرح بها. لم نعلن موافقة متاجر Microsoft أو Google أو Marketplace. تجميع البث يحتاج مساعدًا محليًا مثبتًا.">GrabFlow does not bypass DRM or restricted content. Use it only for media you are authorized to access. Microsoft/Google store certification and Marketplace publication are not claimed here. Native assembly is available only where the separate compatible companion is installed.</div><p><a href="https://gist.github.com/daynightae-cmyk/0af75547b262226946bc1b071f563a5f">Public Privacy Policy</a> · <a href="https://github.com/daynightae-cmyk/KNOuX-GrabFlow-Downloads/releases/tag/v0.6.7">Release notes &amp; all downloads</a></p></section>
+</main><footer><div class="footer-links"><span>© KNOuX Labs · GrabFlow v0.6.7</span><a href="https://github.com/daynightae-cmyk/KNOuX-GrabFlow-Downloads">Public distribution</a><a href="https://gist.github.com/daynightae-cmyk/0af75547b262226946bc1b071f563a5f">Privacy</a></div><p class="small">Browser packages and VSIX are independently downloadable artifacts. Source development repository remains private. No analytics or external scripts are used on this page.</p></footer>
+</div>
+<script>
+(function(){
+  const btn=document.getElementById('lang');
+  btn.addEventListener('click',function(){
+    const toArabic=document.documentElement.lang!=='ar';
+    document.documentElement.lang=toArabic?'ar':'en';
+    document.documentElement.dir=toArabic?'rtl':'ltr';
+    for(const el of document.querySelectorAll('[data-en][data-ar]')){
+      el.textContent=toArabic?el.getAttribute('data-ar'):el.getAttribute('data-en');
+    }
+    btn.textContent=toArabic?'English':'العربية';
+    btn.setAttribute('aria-label',toArabic?'Switch to English':'Switch to Arabic');
+  });
+})();
+</script>
+</body></html>
